@@ -11,8 +11,8 @@ uni = uni * 100
 dez = dez * 10
 
 var inv = cen + dez + uni
-var dif = x - inv
+var dif = x + inv
 //saida
-console.log("Numero:",x, "Inverso:", inv, "Num - inv = ", dif)
+console.log("Numero:",x, "Inverso:", inv, "Num + inv = ", dif)
 
 
