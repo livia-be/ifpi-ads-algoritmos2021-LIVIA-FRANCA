@@ -5,10 +5,14 @@ const prompt = require('prompt-sync')()
 const x = Number(prompt('Atribua um valor inteiro de três digitos para x: '))
 
 //Processamento
-const cen = Math.floor(x / 100)
-const dez = Math.floor((x % 100) / 10)
-const uni = (x % 100) % 10
-const inv =  [].concat(uni,dez,cen);
+var cen = Math.floor(x / 100)
+var dez = Math.floor((x % 100) / 10)
+var uni = (x % 100) % 10
+
+uni = uni * 100
+dez = dez * 10
+
+var inv = cen + dez + uni
 
 //Saída
-console.log('O inverso de x é = ',inv)
+console.log('O inverso de x é : ',inv)
