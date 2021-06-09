@@ -30,6 +30,6 @@ function main() {
     }
    
     //saída
-    console.log('Aluno: ', nome_aluno, "\n", 'Média Semestral: ', media_semestral,"\n",aprovacao)
+    console.log('Aluno: ', nome_aluno, "\n", 'Média Semestral: ', media_semestral.toFixed(2),"\n",aprovacao)
 }
 main()
